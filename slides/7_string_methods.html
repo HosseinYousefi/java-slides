@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="stylesheet" href="../reveal.js/dist/reset.css" />
+    <link rel="stylesheet" href="../reveal.js/dist/reveal.css" />
+    <link
+      rel="stylesheet"
+      href="../reveal.js/dist/theme/harbour.css"
+      id="theme"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../reveal.js/plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>String Methods</h1>
+        </section>
+        <section>
+          <p>
+            As we mentioned before, <code>String</code> is a class, you know
+            what else was a class? <code>Scanner</code>! With the Scanner class
+            we used things like <code>nextInt()</code> and
+            <code>nextLine()</code>. We call these methods, String class also
+            has many methods, in this tutorial we're going to learn about some
+            of them.
+          </p>
+        </section>
+        <section data-auto-animate>
+          <p>
+            The first method we're gonna talk about is <code>.length()</code>.
+          </p>
+          <pre data-id="code">
+          <code data-trim data-noescape data-line-numbers>
+            <script type="text/template">
+                String s = "hello";
+                int len = s.length();
+            </script>
+          </code>
+            </pre>
+          <p>
+            Here <code>len</code> holds the length of <code>s</code>
+            which is 5.
+          </p>
+        </section>
+        <section data-auto-animate>
+          <p>
+            There are also other handy methods such as
+            <code>.toLowerCase()</code> and <code>.toUpperCase()</code> as their
+            names suggest they change the strings to all lowercase or all
+            uppercase respectively.
+          </p>
+          <pre data-id="code">
+            <code data-trim data-noescape data-line-numbers>
+              <script type="text/template">
+                String s = "Hello, World!";
+                System.out.println(s.toLowerCase()); // prints hello, world!
+                System.out.println(s.toUpperCase()); // prints HELLO, WORLD!
+              </script>
+            </code>
+              </pre>
+        </section>
+        <section data-auto-animate>
+          <p>
+            You can also concatenate two strings using
+            <code>.concat()</code> method.
+          </p>
+          <pre data-id="code">
+              <code data-trim data-noescape data-line-numbers>
+                <script type="text/template">
+                    String s = "hello "
+                    String t = "world";
+                    System.out.println(s.concat(t)); // prints hello world
+                </script>
+              </code>
+                </pre>
+        </section>
+        <section data-auto-animate>
+          <p>
+            There is an easier way to do this though, you can use the + operator
+            to concatenate strings together.
+          </p>
+          <pre data-id="code">
+                <code data-trim data-noescape data-line-numbers>
+                  <script type="text/template">
+                        import java.util.Scanner;
+
+                        class Main {
+                            public static void main(String[] args) {
+                                Scanner myScanner = new Scanner(System.in);
+                                System.out.println("What is your name?");
+                                String name = myScanner.nextLine();
+                                System.out.println("Welcome " + name + "!")
+                            }
+                        }
+                  </script>
+                </code>
+                  </pre>
+        </section>
+        <section data-auto-animate>
+          <p>
+            Here we are using the + operator to concatenate
+            <code>"Welcome"</code>
+            with the name we got from the input.
+          </p>
+          <pre data-id="code">
+                  <code data-trim data-noescape data-line-numbers="8">
+                    <script type="text/template">
+                          import java.util.Scanner;
+  
+                          class Main {
+                              public static void main(String[] args) {
+                                  Scanner myScanner = new Scanner(System.in);
+                                  System.out.println("What is your name?");
+                                  String name = myScanner.nextLine();
+                                  System.out.println("Welcome " + name + "!")
+                              }
+                          }
+                    </script>
+                  </code>
+                    </pre>
+        </section>
+      </div>
+    </div>
+    <script src="../reveal.js/dist/reveal.js"></script>
+    <script src="../reveal.js/plugin/notes/notes.js"></script>
+    <script src="../reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="../reveal.js/plugin/highlight/highlight.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>

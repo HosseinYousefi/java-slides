@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Apercu';
+    src: url('./ApercuPro-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('./ApercuPro-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('./ApercuPro-Light.otf');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('./ApercuPro-RegularItalic.otf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('./ApercuPro-BoldItalic.otf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('./ApercuPro-LightItalic.otf');
+    font-weight: lighter;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('./ApercuPro-Medium.otf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('./ApercuPro-MediumItalic.otf');
+    font-weight: 500;
+    font-style: italic;
+}

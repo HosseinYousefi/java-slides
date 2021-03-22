@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="stylesheet" href="../reveal.js/dist/reset.css" />
+    <link rel="stylesheet" href="../reveal.js/dist/reveal.css" />
+    <link
+      rel="stylesheet"
+      href="../reveal.js/dist/theme/harbour.css"
+      id="theme"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../reveal.js/plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>Type Casting</h1>
+        </section>
+        <section>
+          <p>
+            Type casting is when you assign a value of one primitive type to
+            another.
+          </p>
+        </section>
+        <section>
+          <p>We have two different types of casting.</p>
+          <ol>
+            <li>Widening Casting</li>
+            <li>Narrowing Casting</li>
+          </ol>
+        </section>
+        <section data-auto-animate>
+          <p>
+            Widening castings are when we convert a "smaller" type into a
+            "larger" one. For example converting <code>short</code> to
+            <code>int</code> or <code>int</code> to <code>double</code>. These
+            castings happen automatically.
+          </p>
+          <p>Here <code>b</code> holds 5 and it happened implicitly.</p>
+          <pre data-id="code">
+          <code data-trim data-noescape data-line-numbers>
+            <script type="text/template">
+                int a = 5;
+                double b = a;
+            </script>
+          </code>
+            </pre>
+        </section>
+        <section>
+          <p>The order of widening castings is:</p>
+          <p>
+            <code>byte</code> -> <code>short</code> -> <code>int</code> ->
+            <code>long</code> -> <code>float</code> -> <code>double</code>
+          </p>
+        </section>
+        <section>
+          <p>
+            Narrowing castings on the other hand, are converting from a "larger"
+            data type into a "smaller" one.
+          </p>
+        </section>
+        <section>
+          <p>Here the order is reveresed so:</p>
+          <p>
+            <code>double</code> -> <code>float</code> -> <code>long</code> ->
+            <code>int</code> -> <code>short</code> -> <code>byte</code>
+          </p>
+        </section>
+        <section data-auto-animate>
+          <p>
+            Narrowing castings on the other hand, are converting from a "larger"
+            data type into a "smaller" one.
+          </p>
+          <p>
+            Here <code>a</code> holds 5 because we explicitly turned the
+            double value of <code>5.4</code> into the integer value of
+            <code>5</code> by putting the type into parentheses behind it.
+          </p>
+          <pre data-id="code">
+            <code data-trim data-noescape data-line-numbers>
+              <script type="text/template">
+                double b = 5.4;
+                int a = (int)b;
+              </script>
+            </code>
+              </pre>
+        </section>
+        
+      </div>
+    </div>
+    <script src="../reveal.js/dist/reveal.js"></script>
+    <script src="../reveal.js/plugin/notes/notes.js"></script>
+    <script src="../reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="../reveal.js/plugin/highlight/highlight.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>

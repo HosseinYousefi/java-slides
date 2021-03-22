@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="stylesheet" href="../reveal.js/dist/reset.css" />
+    <link rel="stylesheet" href="../reveal.js/dist/reveal.css" />
+    <link
+      rel="stylesheet"
+      href="../reveal.js/dist/theme/harbour.css"
+      id="theme"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../reveal.js/plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>IO</h1>
+        </section>
+        <section>
+          <p>
+            We can output something on the screen by printing, so how can we get
+            input? That's right, by scanning!
+          </p>
+        </section>
+        <section data-auto-animate>
+          <p>Let's import <code>Scanner</code> and use it.</p>
+          <pre data-id="code">
+          <code data-trim data-noescape data-line-numbers>
+            <script type="text/template">
+                import java.util.Scanner;
+
+                class Main {
+                    public static void main(String[] args) {
+                        Scanner myScanner = new Scanner(System.in);
+                    }
+                }
+            </script>
+          </code>
+            </pre>
+        </section>
+        <section data-auto-animate>
+          <p>
+            Now let's get an integer from the input and store it in
+            <code>a</code>.
+          </p>
+          <pre data-id="code">
+            <code data-trim data-noescape data-line-numbers>
+              <script type="text/template">
+                  import java.util.Scanner;
+  
+                  class Main {
+                      public static void main(String[] args) {
+                          Scanner myScanner = new Scanner(System.in);
+                          int a = myScanner.nextInt();
+                          System.out.println(a);
+                      }
+                  }
+              </script>
+            </code>
+              </pre>
+        </section>
+        <section data-auto-animate>
+          <p>We can get two variables from input and output their sum.</p>
+          <pre data-id="code">
+              <code data-trim data-noescape data-line-numbers>
+                <script type="text/template">
+                    import java.util.Scanner;
+    
+                    class Main {
+                        public static void main(String[] args) {
+                            Scanner myScanner = new Scanner(System.in);
+                            int a = myScanner.nextInt();
+                            int b = myScanner.nextInt();
+                            System.out.println(a + b);
+                        }
+                    }
+                </script>
+              </code>
+                </pre>
+        </section>
+      </div>
+    </div>
+    <script src="../reveal.js/dist/reveal.js"></script>
+    <script src="../reveal.js/plugin/notes/notes.js"></script>
+    <script src="../reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="../reveal.js/plugin/highlight/highlight.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="stylesheet" href="../reveal.js/dist/reset.css" />
+    <link rel="stylesheet" href="../reveal.js/dist/reveal.css" />
+    <link rel="stylesheet" href="../reveal.js/dist/theme/harbour.css" id="theme" />
+
+    <link
+      rel="stylesheet"
+      href="../reveal.js/plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>Basic Syntax</h1>
+        </section>
+        <section>
+          <p>
+            In the previous lesson, you wrote your first program in Java which
+            printed "Hello World" to the screen.
+          </p>
+        </section>
+        <section data-auto-animate>
+          <p>
+            Let's have a closer look at the program and talk about each part of
+            it.
+          </p>
+          <pre data-id="code">
+          <code data-trim data-noescape data-line-numbers>
+            <script type="text/template">
+              public class Main {
+                  public static void main(String[] args) {
+                      System.out.println("Hello, World!");
+                  }
+              }
+            </script>
+          </code>
+        </pre>
+        </section>
+        <section data-auto-animate>
+          <p>Let's start with the class</p>
+          <pre data-id="code">
+            <code data-trim data-noescape data-line-numbers="1,5">
+            <script type="text/template">
+              public class Main {
+                  public static void main(String[] args) {
+                      System.out.println("Hello, World!");
+                  }
+              }
+            </script>
+          </code>
+        </pre>
+        </section>
+        <section>
+          <p>Every Java program consists of different classes.</p>
+          <p>Classes are like blueprints for creating different things.</p>
+        </section>
+        <section>
+          <p>
+            A <code>Building</code> class can be a blueprint for building, well,
+            buildings.
+          </p>
+          <p>A <code>Car</code> class can be a blueprint for building cars.</p>
+        </section>
+        <section>
+          <p>
+            Every class can have some properties and some methods. For example a
+            <code>Building</code> class can have a <code>height</code> property
+            and an <code>area</code>
+            property.
+          </p>
+          <p>
+            While a <code>Car</code> class can have other properties like
+            <code>numberOfDoors</code> or <code>remainingFuel</code>.
+          </p>
+        </section>
+        <section>
+          <code>public</code>: Just like the one we had before the class, this
+          means that other classes can see and run this method.
+        </section>
+        <section>
+          <code>static</code>: This means that we don't need to create an object
+          in order to run this method.
+        </section>
+        <section>
+          <code>void</code>: This means that the method doesn't return anything.
+        </section>
+        <section>
+          <code>main</code>: This is the name of the method, this tells JVM that
+          this is the entry point of your program.
+        </section>
+        <section>
+          <code>String[] args</code>: This is used for command-line arguments,
+          we will cover that in a separate tutorial.
+        </section>
+        <section data-auto-animate>
+          <p>Finally, this line outputs <code>"Hello, World!"</code>.</p>
+          <pre data-id="code">
+            <code data-trim data-noescape data-line-numbers="3,3">
+            <script type="text/template">
+              public class Main {
+                  public static void main(String[] args) {
+                      System.out.println("Hello, World!");
+                  }
+              }
+            </script>
+          </code>
+        </pre>
+        </section>
+      </div>
+    </div>
+    <script src="../reveal.js/dist/reveal.js"></script>
+    <script src="../reveal.js/plugin/notes/notes.js"></script>
+    <script src="../reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="../reveal.js/plugin/highlight/highlight.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>

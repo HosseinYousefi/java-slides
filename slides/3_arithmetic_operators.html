@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="stylesheet" href="../reveal.js/dist/reset.css" />
+    <link rel="stylesheet" href="../reveal.js/dist/reveal.css" />
+    <link
+      rel="stylesheet"
+      href="../reveal.js/dist/theme/harbour.css"
+      id="theme"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../reveal.js/plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>Arithmetic Operators</h1>
+        </section>
+        <section>
+          <p>
+            Operators are used for performing various operations on values. For
+            example, using the + operator, we can add up two numbers.
+          </p>
+        </section>
+        <section data-auto-animate>
+          <p>
+            For example here the value of <code>x</code> will be 5 + 4 which is
+            9.
+          </p>
+          <pre data-id="code">
+          <code data-trim data-noescape data-line-numbers>
+            <script type="text/template">
+                int x = 5 + 4;
+            </script>
+          </code>
+        </pre>
+        </section>
+        <section data-auto-animate>
+          <p>You can also do this with variables.</p>
+          <pre data-id="code">
+            <code data-trim data-noescape data-line-numbers="1,5">
+            <script type="text/template">
+                int a = 5;
+                int b = 4;
+                int c = a + b;
+            </script>
+          </code>
+        </pre>
+        </section>
+        <section>
+          <p>
+            Arithmetic operators are used to perform common mathematical
+            operators like:
+          </p>
+          <ul>
+            <li>Addition with +</li>
+            <li>Subtraction with -</li>
+            <li>Multiplication with *</li>
+          </ul>
+        </section>
+        <section>
+          <p>
+            You can also divide with <code>/,</code> however, the division of
+            two integers always yields another integer. So of course
+            <code>6 / 2</code> yields 3 but also <code>7 / 2</code> yields 3.
+            <code>7.0 / 2</code> yields 3.5 though, since 7.0 is a double.
+          </p>
+        </section>
+        <section>
+          <p>
+            We also have a modulus operator denoted with <code>%</code>. This
+            operator yields the remainder of the division of its two operands.
+            For example, <code>17 % 5</code> yields 2 because if we divide 17 by
+            5 we get a
+            <code>remainder of 2.</code>
+          </p>
+        </section>
+        <section>
+          <p>
+            There is also <code>++</code> and <code>--</code>. You can
+            increment a variable by one with <code>++</code> and decrement a
+            variable by one with <code>--</code>.
+          </p>
+        </section>
+      </div>
+    </div>
+    <script src="../reveal.js/dist/reveal.js"></script>
+    <script src="../reveal.js/plugin/notes/notes.js"></script>
+    <script src="../reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="../reveal.js/plugin/highlight/highlight.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>

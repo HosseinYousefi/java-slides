@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="stylesheet" href="../reveal.js/dist/reset.css" />
+    <link rel="stylesheet" href="../reveal.js/dist/reveal.css" />
+    <link
+      rel="stylesheet"
+      href="../reveal.js/dist/theme/harbour.css"
+      id="theme"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../reveal.js/plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>Strings</h1>
+        </section>
+        <section>
+          <p>
+            Strings are simply sequences of characters, for example,
+            <code>"hello"</code>
+            is a string of 5 characters. <code>h</code>, <code>e</code>,
+            <code>l</code>, <code>l</code>, and <code>o</code>.
+          </p>
+        </section>
+        <section data-auto-animate>
+          <p>This is how we can declare strings:</p>
+          <pre data-id="code">
+          <code data-trim data-noescape data-line-numbers>
+            <script type="text/template">
+                String s = "hello";
+            </script>
+          </code>
+            </pre>
+        </section>
+        <section data-auto-animate>
+          <p>
+            Let's remind ourselves about the <code>Scanner</code> class. We can
+            import it and declare one.
+          </p>
+          <p>
+            Now in order to read a word, we can write
+            <code>myScanner.next()</code>. Ok let's print the same thing we got
+            from the input.
+          </p>
+          <pre data-id="code2">
+            <code data-trim data-noescape data-line-numbers>
+              <script type="text/template">
+                  import java.util.Scanner;
+  
+                  class Main {
+                      public static void main(String[] args) {
+                          Scanner myScanner = new Scanner(System.in);
+                          String s = myScanner.next();
+                          System.out.println(s);
+                      }
+                  }
+              </script>
+            </code>
+              </pre>
+        </section>
+        <section data-auto-animate>
+          <p>
+            And to read an entire line we can use
+            <code>nextLine()</code> method.
+          </p>
+          <pre data-id="code2">
+              <code data-trim data-noescape data-line-numbers>
+                <script type="text/template">
+                    import java.util.Scanner;
+    
+                    class Main {
+                        public static void main(String[] args) {
+                            Scanner myScanner = new Scanner(System.in);
+                            String s = myScanner.nextLine();
+                            System.out.println(s);
+                        }
+                    }
+                </script>
+              </code>
+                </pre>
+        </section>
+      </div>
+    </div>
+    <script src="../reveal.js/dist/reveal.js"></script>
+    <script src="../reveal.js/plugin/notes/notes.js"></script>
+    <script src="../reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="../reveal.js/plugin/highlight/highlight.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="stylesheet" href="../reveal.js/dist/reset.css" />
+    <link rel="stylesheet" href="../reveal.js/dist/reveal.css" />
+    <link
+      rel="stylesheet"
+      href="../reveal.js/dist/theme/harbour.css"
+      id="theme"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../reveal.js/plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>Data Types</h1>
+        </section>
+        <section>
+          <p>
+            In Java, we have eight primitive data types: <code>boolean</code>,
+            <code>char</code>, <code>byte</code>, <code>short</code>,
+            <code>int</code>, <code>long</code>, <code>float</code> and
+            <code>double</code>.
+          </p>
+        </section>
+        <section>
+          <code>byte</code>, <code>short</code>, <code>int</code> and
+          <code>long</code> data types are used for storing whole numbers.
+        </section>
+        <section>
+          <code>float</code> and <code>double</code> are used for fractional or
+          floating-point numbers.
+        </section>
+        <section>
+          <code>char</code> is used for storing characters (single letters).
+        </section>
+        <section>
+          <code>boolean</code> data type is used for variables that can hold
+          either <code>true</code> or <code>false</code>.
+        </section>
+        <section>
+          <code>byte</code> can hold whole numbers between -128 to 127.
+        </section>
+        <section>
+          <code>short</code> can hold whole numbers between -32768 to 32767.
+        </section>
+        <section>
+          <code>int</code> is arguably the most common primitive data type and
+          it can hold whole numbers between -2,147,483,648 to 2,147,483,647.
+        </section>
+        <section>
+          <code>long</code> is usually used when int is not large enough to hold
+          the value. <code>long</code> can hold whole numbers from
+          -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807.
+        </section>
+        <section>
+          <code>float</code> and <code>double</code> are used to hold
+          floating-point numbers such as <code>3.14</code> and
+          <code>-1.1</code>. <code>float</code> takes 4 bytes of memory while
+          <code>double</code> takes 8 bytes of memory. The accuracy of
+          <code>double</code> is, therefore, better and it's more common to use
+          it
+          instead of <code>float</code>.
+        </section>
+      </div>
+    </div>
+    <script src="../reveal.js/dist/reveal.js"></script>
+    <script src="../reveal.js/plugin/notes/notes.js"></script>
+    <script src="../reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="../reveal.js/plugin/highlight/highlight.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>

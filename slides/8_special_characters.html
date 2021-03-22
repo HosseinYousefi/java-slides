@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="stylesheet" href="../reveal.js/dist/reset.css" />
+    <link rel="stylesheet" href="../reveal.js/dist/reveal.css" />
+    <link
+      rel="stylesheet"
+      href="../reveal.js/dist/theme/harbour.css"
+      id="theme"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../reveal.js/plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>Special Characters</h1>
+        </section>
+        <section>
+          <p>
+            Some of you might have noticed that in order to define a
+            <code>String</code> we put our text within double quotes
+            (<code>"</code>). But what if the text itself contains double
+            quotes?
+          </p>
+        </section>
+        <section data-auto-animate>
+          <p>We can escape the character using backslash (<code>\</code>)</p>
+          <pre data-id="code">
+          <code data-trim data-noescape data-line-numbers>
+            <script type="text/template">
+                String s = "\"quote\"";
+            </script>
+          </code>
+            </pre>
+        </section>
+        <section>
+          <p>
+              Here are some other special characters:
+          </p>
+          <ul>
+              <li><code>\"</code> for <code>"</code></li>
+              <li><code>\n</code> for going to the next line</li>
+              <li><code>\\</code> for <code>\</code></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+    <script src="../reveal.js/dist/reveal.js"></script>
+    <script src="../reveal.js/plugin/notes/notes.js"></script>
+    <script src="../reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="../reveal.js/plugin/highlight/highlight.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
